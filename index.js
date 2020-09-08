@@ -18,7 +18,7 @@ let color = randomColor(
 })
  
 let pattern = ` #################### \n #################### 
- ##### ${color} ###### \n #################### \n ####################`
+ ##### ${color} ###### \n #################### \n #################### \n`
 
  let stretch 
 
@@ -29,11 +29,14 @@ let pattern = ` #################### \n ####################
 
   let star = "";
 for(let i=1; i<=rows; i++) {
+    if (i !== Math.ceil(rows/2)){
   
   for(let j=1; j<=columns; j++) {
-    star += "#";
-  }
-  star += "\n";
+    star += "#";}
+  } 
+   if (i !== Math.ceil(rows/2)){
+      star += "\n";
+  }else {star += `##  ${color}  ## \n`}
 }
 console.log(chalk.hex(color)(star));}
 
