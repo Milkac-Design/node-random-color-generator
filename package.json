@@ -1,0 +1,12 @@
+{
+  "name": "node-random-color-generator",
+  "version": "1.0.0",
+  "main": "index.js",
+  "repository": "https://github.com/Milkac-Design/node-random-color-generator.git",
+  "author": "Milkac-Design <milkac88@gmail.com>",
+  "license": "MIT",
+  "dependencies": {
+    "chalk": "^4.1.0",
+    "randomcolor": "^0.6.2"
+  }
+}
